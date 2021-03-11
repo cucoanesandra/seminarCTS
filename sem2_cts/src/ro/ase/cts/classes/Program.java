@@ -14,11 +14,16 @@ public class Program {
 	}
 	
 	public static void main(String[] args) {
+		System.out.println(Student.getSumaFinantare());
+		System.out.println(Angajat.getSumaFinantare());
 		List<Aplicant> listaAplicanti;
 		try {
 			listaAplicanti = citesteAplicanti(new StudentReader("studenti.txt"));
-			for(Aplicant angajat:listaAplicanti)
+			for(Aplicant angajat:listaAplicanti) 
+			{
 				System.out.println(angajat.toString());
+				System.out.println(angajat.getSumaFinantata());
+			}
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
