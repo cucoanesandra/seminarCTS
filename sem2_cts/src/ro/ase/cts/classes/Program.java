@@ -5,6 +5,7 @@ import java.util.List;
 
 import ro.ase.cts.readere.AngajatReader;
 import ro.ase.cts.readere.AplicantReader;
+import ro.ase.cts.readere.StudentReader;
 
 public class Program {
 
@@ -15,7 +16,7 @@ public class Program {
 	public static void main(String[] args) {
 		List<Aplicant> listaAplicanti;
 		try {
-			listaAplicanti = citesteAplicanti(new AngajatReader("angajati.txt"));
+			listaAplicanti = citesteAplicanti(new StudentReader("studenti.txt"));
 			for(Aplicant angajat:listaAplicanti)
 				System.out.println(angajat.toString());
 		} catch (FileNotFoundException e) {
