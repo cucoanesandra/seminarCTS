@@ -55,13 +55,13 @@ public abstract class Aplicant {
 		super();
 	}
 
-	public Aplicant(String nume, String prenume, int varsta, int punctaj, int nr_proiecte, String[] denumireProiect) {
+	public Aplicant(String nume, String prenume, int varsta, int punctaj, int nrProiecte, String[] denumireProiect) {
 		super();
 		this.nume = nume;
 		this.prenume = prenume;
 		this.varsta = varsta;
 		this.punctaj = punctaj;
-		this.nrProiecte = nr_proiecte;
+		this.nrProiecte = nrProiecte;
 		this.denumiriProiecte = denumireProiect;
 	}
 

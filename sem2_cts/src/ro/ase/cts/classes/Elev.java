@@ -10,8 +10,8 @@ public class Elev extends Aplicant{
 	public int getClasa() {
 		return clasa;
 	}
-	public void setClasa(int i) {
-		this.clasa = i;
+	public void setClasa(int clasa) {
+		this.clasa = clasa;
 	}
 	public String getTutore() {
 		return tutore;
@@ -37,16 +37,16 @@ public class Elev extends Aplicant{
 	}
 	
 	public Elev(String nume, String prenume, int varsta, int punctaj,
-			int nr_proiecte, String[] denumireProiect, int clasa, String tutore) {
-		super(nume,prenume,varsta,punctaj,nr_proiecte,denumireProiect);
+			int nrProiecte, String[] denumireProiect, int clasa, String tutore) {
+		super(nume,prenume,varsta,punctaj,nrProiecte,denumireProiect);
 		this.clasa = clasa;
 		this.tutore = tutore;
 	}
 	
 	public int finantare() {
-		int s=30;
-		System.out.println("Angajatul "+getNume()+" "+getPrenume()+" primeste"+s+" Euro/zi in proiect.");
-		return s;
+		int suma=30;
+		System.out.println("Angajatul "+getNume()+" "+getPrenume()+" primeste"+suma+" Euro/zi in proiect.");
+		return suma;
 	}
 	@Override
 	public float getSumaFinantata() {

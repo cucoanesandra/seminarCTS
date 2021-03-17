@@ -17,8 +17,8 @@ public class Student extends Aplicant {
 	public int getAnStudii() {
 		return anStudii;
 	}
-	public void setAnStudii(int an_studii) {
-		this.anStudii = an_studii;
+	public void setAnStudii(int anStudii) {
+		this.anStudii = anStudii;
 	}
 
 	public static float getSumaFinantare() {
@@ -33,21 +33,21 @@ public class Student extends Aplicant {
 		
 	}
 	
-	public Student(String nume, String prenume, int varsta, int punctaj, int nr_proiecte, String[] denumireProiect, String facultate, int an_studii) {
-		super(nume,prenume,varsta,punctaj,nr_proiecte,denumireProiect);
+	public Student(String nume, String prenume, int varsta, int punctaj, int nrProiecte, String[] denumireProiect, String facultate, int anStudii) {
+		super(nume,prenume,varsta,punctaj,nrProiecte,denumireProiect);
 		this.facultate = facultate;
-		this.anStudii = an_studii;
+		this.anStudii = anStudii;
 	}
 	@Override
 	public String toString() {
-		return "Student: "+super.toString()+ "Facultate=" + facultate + ", An_studii=" + anStudii ;
+		return "Student: "+super.toString()+ "Facultate=" + facultate + ", An studii=" + anStudii ;
 	}
 	
 	
 	public int finantare() {
-		int s=20;
-		System.out.println("Studentul "+getNume()+" "+getPrenume()+" primeste"+s+" Euro/zi in proiect.");
-		return s;
+		int suma=20;
+		System.out.println("Studentul "+getNume()+" "+getPrenume()+" primeste"+suma+" Euro/zi in proiect.");
+		return suma;
 	}
 	@Override
 	public float getSumaFinantata() {
