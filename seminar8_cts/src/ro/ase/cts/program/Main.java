@@ -1,7 +1,10 @@
 package ro.ase.cts.program;
 
 import ro.ase.cts.classes.IOptiuniMeniu;
+import ro.ase.cts.classes.IRezervare;
 import ro.ase.cts.classes.Item;
+import ro.ase.cts.classes.ProxyRezervare;
+import ro.ase.cts.classes.Rezervare;
 import ro.ase.cts.classes.Sectiune;
 
 public class Main {
@@ -35,6 +38,14 @@ public class Main {
 			e.printStackTrace();
 		}
 		
+		
+		IRezervare rezervarePtDouaPers=new Rezervare(3, 2);
+		rezervarePtDouaPers.anuntaRezervare();
+		
+		ProxyRezervare proxy=new ProxyRezervare((Rezervare) rezervarePtDouaPers);
+		proxy.anuntaRezervare();
+		((Rezervare) rezervarePtDouaPers).setNrPersoane(4);
+		proxy.anuntaRezervare();
 
 	}
 
