@@ -5,9 +5,12 @@ import static org.junit.Assert.*;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
 import ro.ase.cts.classes.Grupa;
 import ro.ase.cts.classes.IStudent;
+import ro.ase.cts.tests.suite.categorii.TesteGetPromovabilitate;
+import ro.ase.cts.tests.suite.categorii.TesteUrgente;
 
 public class TestCasePromovabilitate {
 	private IStudent studentStub=new StudentStub();
@@ -20,6 +23,7 @@ public class TestCasePromovabilitate {
 	public void tearDown() throws Exception {
 	}
 
+	@Category({TesteUrgente.class, TesteGetPromovabilitate.class})
 	@Test
 	public void testGetPromovabilitate() {
 		Grupa grupa=new Grupa(1010);
