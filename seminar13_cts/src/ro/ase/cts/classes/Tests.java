@@ -1,5 +1,6 @@
 package ro.ase.cts.classes;
 
+
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.After;
@@ -45,15 +46,15 @@ Grupa grupa;
 		Assert.assertEquals(1100, grupa.getNrGrupa());
 	}
 	
-	@Test(expected = IndexOutOfBoundsException.class)
-	public void inAfaraLimitelorTest() {
-		Grupa grupa = new Grupa(1300);
-	}
-	
-	@Test(timeout = 1000)
-	public void performantaTest() {
-		Grupa grupa = new Grupa(1040);
-	}
+//	@Test(expected = IndexOutOfBoundsException.class)
+//	public void inAfaraLimitelorTest() {
+//		Grupa grupa = new Grupa(1300);
+//	}
+//	
+//	@Test(timeout = 1000)
+//	public void performantaTest() {
+//		Grupa grupa = new Grupa(1040);
+//	}
 
 	@Test
 	public void corectitudinePromovabilitateTest() {
@@ -93,3 +94,4 @@ Grupa grupa;
 	}
 
 }
+
